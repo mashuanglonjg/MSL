@@ -1,0 +1,130 @@
+[ {
+  "buildOrder" : 33,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/33/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 32,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/32/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 31,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/31/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 30,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/30/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 29,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/29/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 28,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/28/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 27,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/27/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 26,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/26/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 25,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/25/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 24,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/24/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 23,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 3,
+    "Test defects" : 5
+  }
+}, {
+  "buildOrder" : 22,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 3,
+    "Test defects" : 5
+  }
+}, {
+  "buildOrder" : 21,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 3,
+    "Test defects" : 5
+  }
+}, {
+  "buildOrder" : 20,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 2,
+    "Test defects" : 5
+  }
+}, {
+  "buildOrder" : 19,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 2,
+    "Test defects" : 5
+  }
+}, {
+  "buildOrder" : 18,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/18/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 1
+  }
+}, {
+  "buildOrder" : 17,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/17/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 1
+  }
+}, {
+  "buildOrder" : 16,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/16/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 1
+  }
+}, {
+  "buildOrder" : 15,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/15/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 1
+  }
+}, {
+  "buildOrder" : 14,
+  "reportUrl" : "http://192.168.60.162:8080/job/LT_college/14/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 1
+  }
+} ]

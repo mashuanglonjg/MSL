@@ -1,0 +1,21 @@
+[ {
+  "uid" : "4d6efce0588ab0da",
+  "name" : "test_findpwd",
+  "time" : {
+    "start" : 1588129632486,
+    "stop" : 1588129634619,
+    "duration" : 2133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65cbd9f16ad13ee7",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1588129634624,
+    "stop" : 1588129635314,
+    "duration" : 690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

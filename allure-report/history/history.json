@@ -1,0 +1,734 @@
+{
+  "d8ac1ac46482673431a5b83184df5949" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "597a60e213a0a408",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/597a60e213a0a408",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'text'",
+      "time" : {
+        "start" : 1588043257725,
+        "stop" : 1588043282464,
+        "duration" : 24739
+      }
+    }, {
+      "uid" : "2343b6a133309d77",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/2343b6a133309d77",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'text'",
+      "time" : {
+        "start" : 1588043257725,
+        "stop" : 1588043282464,
+        "duration" : 24739
+      }
+    }, {
+      "uid" : "10bf63bb764b6137",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/10bf63bb764b6137",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'text'",
+      "time" : {
+        "start" : 1588043257725,
+        "stop" : 1588043282464,
+        "duration" : 24739
+      }
+    } ]
+  },
+  "82a9305285676025ddee6ddbb715b747" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "e7cb463e7adc082c",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/e7cb463e7adc082c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'get_exreport_title'",
+      "time" : {
+        "start" : 1588043209840,
+        "stop" : 1588043217958,
+        "duration" : 8118
+      }
+    }, {
+      "uid" : "c3e2b8b66942ed",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/c3e2b8b66942ed",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'get_exreport_title'",
+      "time" : {
+        "start" : 1588043209840,
+        "stop" : 1588043217958,
+        "duration" : 8118
+      }
+    }, {
+      "uid" : "ca069245206e2cbb",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/ca069245206e2cbb",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'get_exreport_title'",
+      "time" : {
+        "start" : 1588043209840,
+        "stop" : 1588043217958,
+        "duration" : 8118
+      }
+    } ]
+  },
+  "4b04c05739b2b02ab51dd2976061ffa0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "5bdbd21ff1d6707c",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/5bdbd21ff1d6707c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588044008987,
+        "stop" : 1588044018337,
+        "duration" : 9350
+      }
+    }, {
+      "uid" : "14fa972e33bc432d",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/14fa972e33bc432d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588044008987,
+        "stop" : 1588044018337,
+        "duration" : 9350
+      }
+    }, {
+      "uid" : "2d6d1b6aebeee0dc",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/2d6d1b6aebeee0dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587990984516,
+        "stop" : 1587990992829,
+        "duration" : 8313
+      }
+    }, {
+      "uid" : "415c8f04f26fb4ca",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/415c8f04f26fb4ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587990984516,
+        "stop" : 1587990992829,
+        "duration" : 8313
+      }
+    } ]
+  },
+  "8aa31377c352e8250480c8996449faca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    },
+    "items" : [ {
+      "uid" : "4d6efce0588ab0da",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/33/allure/#testresult/4d6efce0588ab0da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588129632486,
+        "stop" : 1588129634619,
+        "duration" : 2133
+      }
+    }, {
+      "uid" : "709a11053611a0c",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/32/allure/#testresult/709a11053611a0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588128261672,
+        "stop" : 1588128263896,
+        "duration" : 2224
+      }
+    }, {
+      "uid" : "998d5a2ca748abcf",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/31/allure/#testresult/998d5a2ca748abcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588074014837,
+        "stop" : 1588074017109,
+        "duration" : 2272
+      }
+    }, {
+      "uid" : "d09365a2a91d83d3",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/30/allure/#testresult/d09365a2a91d83d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588072861714,
+        "stop" : 1588072863475,
+        "duration" : 1761
+      }
+    }, {
+      "uid" : "9ab678c8d6daa391",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/29/allure/#testresult/9ab678c8d6daa391",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588072689312,
+        "stop" : 1588072691005,
+        "duration" : 1693
+      }
+    } ]
+  },
+  "34f78681748cd3b5fda90521003f6103" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "7b312de27496aa4d",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/7b312de27496aa4d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1588043283417,
+        "stop" : 1588043306436,
+        "duration" : 23019
+      }
+    }, {
+      "uid" : "523de09710187017",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/523de09710187017",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1588043283417,
+        "stop" : 1588043306436,
+        "duration" : 23019
+      }
+    }, {
+      "uid" : "1729983b659f220",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/1729983b659f220",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1588043283417,
+        "stop" : 1588043306436,
+        "duration" : 23019
+      }
+    } ]
+  },
+  "abc7fda195c80b538625a8ac5d63f2db" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "22f3261d6be5b333",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/22f3261d6be5b333",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1588043176520,
+        "stop" : 1588043179862,
+        "duration" : 3342
+      }
+    }, {
+      "uid" : "e611b326062fc734",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/e611b326062fc734",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1588043176520,
+        "stop" : 1588043179862,
+        "duration" : 3342
+      }
+    }, {
+      "uid" : "e0a0be1e9647dc61",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/e0a0be1e9647dc61",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1588043176520,
+        "stop" : 1588043179862,
+        "duration" : 3342
+      }
+    } ]
+  },
+  "7300bfe8d2f0fffa4b11e5cc2fecb4c2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "39d4f56c5d533f2c",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/39d4f56c5d533f2c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'text'",
+      "time" : {
+        "start" : 1587991071466,
+        "stop" : 1587991095580,
+        "duration" : 24114
+      }
+    }, {
+      "uid" : "ab35abe764658477",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/ab35abe764658477",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'text'",
+      "time" : {
+        "start" : 1587991071466,
+        "stop" : 1587991095580,
+        "duration" : 24114
+      }
+    } ]
+  },
+  "96785de4086b5be405edbdd5bc2f2693" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "c87ef64c8157d36d",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/c87ef64c8157d36d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1588043306943,
+        "stop" : 1588043330121,
+        "duration" : 23178
+      }
+    }, {
+      "uid" : "49b8d9fd982f313f",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/49b8d9fd982f313f",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1588043306943,
+        "stop" : 1588043330121,
+        "duration" : 23178
+      }
+    }, {
+      "uid" : "b895e89d06606b12",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/b895e89d06606b12",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1588043306943,
+        "stop" : 1588043330121,
+        "duration" : 23178
+      }
+    } ]
+  },
+  "434d5bffe5a9fbe39111553ad36dfc6a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "53df1566234b0079",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/53df1566234b0079",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588043166949,
+        "stop" : 1588043176515,
+        "duration" : 9566
+      }
+    }, {
+      "uid" : "6fbdda332f7c6103",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/6fbdda332f7c6103",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588043166949,
+        "stop" : 1588043176515,
+        "duration" : 9566
+      }
+    }, {
+      "uid" : "68b4abc679792b54",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/68b4abc679792b54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588043166949,
+        "stop" : 1588043176515,
+        "duration" : 9566
+      }
+    } ]
+  },
+  "830ef4860addba6318a541c255bc6237" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "4ed6606550fe44f8",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/4ed6606550fe44f8",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'do_exercise'",
+      "time" : {
+        "start" : 1587990996230,
+        "stop" : 1587991024081,
+        "duration" : 27851
+      }
+    }, {
+      "uid" : "9000aa08b77b43fe",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/9000aa08b77b43fe",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'do_exercise'",
+      "time" : {
+        "start" : 1587990996230,
+        "stop" : 1587991024081,
+        "duration" : 27851
+      }
+    } ]
+  },
+  "8d00424ecf948fefb4018c74640ad535" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "f1c83680e9de65b",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/f1c83680e9de65b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 0\n +  where 0 = <bound method Taskpage.get_len of <page.task.Taskpage object at 0x039D5130>>()\n +    where <bound method Taskpage.get_len of <page.task.Taskpage object at 0x039D5130>> = <page.task.Taskpage object at 0x039D5130>.get_len\n +      where <page.task.Taskpage object at 0x039D5130> = <test_case.test_task.TestTask object at 0x039D53D0>.task_page",
+      "time" : {
+        "start" : 1587991033003,
+        "stop" : 1587991070968,
+        "duration" : 37965
+      }
+    }, {
+      "uid" : "14df2baafaac7192",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/14df2baafaac7192",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 0\n +  where 0 = <bound method Taskpage.get_len of <page.task.Taskpage object at 0x039D5130>>()\n +    where <bound method Taskpage.get_len of <page.task.Taskpage object at 0x039D5130>> = <page.task.Taskpage object at 0x039D5130>.get_len\n +      where <page.task.Taskpage object at 0x039D5130> = <test_case.test_task.TestTask object at 0x039D53D0>.task_page",
+      "time" : {
+        "start" : 1587991033003,
+        "stop" : 1587991070968,
+        "duration" : 37965
+      }
+    } ]
+  },
+  "a529309393f49aff1e196b16eefcf214" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "804ef4432db09179",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/804ef4432db09179",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1587991120015,
+        "stop" : 1587991143247,
+        "duration" : 23232
+      }
+    }, {
+      "uid" : "559cd2deeb2ba181",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/559cd2deeb2ba181",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1587991120015,
+        "stop" : 1587991143247,
+        "duration" : 23232
+      }
+    } ]
+  },
+  "cee0aac47a564ccadc518efc6bb14219" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "76f38ab2ee2b7a19",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/76f38ab2ee2b7a19",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'do_exercise'",
+      "time" : {
+        "start" : 1588043180538,
+        "stop" : 1588043209171,
+        "duration" : 28633
+      }
+    }, {
+      "uid" : "c31dbdbb4f54b326",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/c31dbdbb4f54b326",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'do_exercise'",
+      "time" : {
+        "start" : 1588043180538,
+        "stop" : 1588043209171,
+        "duration" : 28633
+      }
+    }, {
+      "uid" : "3188898a90528b16",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/3188898a90528b16",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'do_exercise'",
+      "time" : {
+        "start" : 1588043180538,
+        "stop" : 1588043209171,
+        "duration" : 28633
+      }
+    } ]
+  },
+  "6909312fac72bd8c9cb1083f2fb16498" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "5becb863279e52b7",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/5becb863279e52b7",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1587991096465,
+        "stop" : 1587991119503,
+        "duration" : 23038
+      }
+    }, {
+      "uid" : "2aa2028992554e9",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/2aa2028992554e9",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "time" : {
+        "start" : 1587991096465,
+        "stop" : 1587991119503,
+        "duration" : 23038
+      }
+    } ]
+  },
+  "da88586f2e77db1a02b8abcd6761bb9a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 6
+    },
+    "items" : [ {
+      "uid" : "65cbd9f16ad13ee7",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/33/allure/#testresult/65cbd9f16ad13ee7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588129634624,
+        "stop" : 1588129635314,
+        "duration" : 690
+      }
+    }, {
+      "uid" : "62c01e6ff10efb5",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/32/allure/#testresult/62c01e6ff10efb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588128263900,
+        "stop" : 1588128265271,
+        "duration" : 1371
+      }
+    }, {
+      "uid" : "bc597b38d246212f",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/31/allure/#testresult/bc597b38d246212f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588074017124,
+        "stop" : 1588074017778,
+        "duration" : 654
+      }
+    }, {
+      "uid" : "59b38ddad3fd5f8f",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/30/allure/#testresult/59b38ddad3fd5f8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588072863479,
+        "stop" : 1588072864342,
+        "duration" : 863
+      }
+    }, {
+      "uid" : "146361d7d7623604",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/29/allure/#testresult/146361d7d7623604",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'Mainpage' is not defined",
+      "time" : {
+        "start" : 1588072691009,
+        "stop" : 1588072691947,
+        "duration" : 938
+      }
+    } ]
+  },
+  "6f4d9b67983f77b4e8c41a7d410f0294" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "4e5faf77d2f7555c",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/4e5faf77d2f7555c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'get_exreport_title'",
+      "time" : {
+        "start" : 1587991024549,
+        "stop" : 1587991032510,
+        "duration" : 7961
+      }
+    }, {
+      "uid" : "c5692126bc920e15",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/c5692126bc920e15",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'get_exreport_title'",
+      "time" : {
+        "start" : 1587991024549,
+        "stop" : 1587991032510,
+        "duration" : 7961
+      }
+    } ]
+  },
+  "7b59fc667804abcd20f516fdc4dcb2f3" : {
+    "statistic" : {
+      "failed" : 12,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 12
+    },
+    "items" : [ {
+      "uid" : "c420290e946ad7a9",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/c420290e946ad7a9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1587987232894,
+        "stop" : 1587987236965,
+        "duration" : 4071
+      }
+    }, {
+      "uid" : "31b66881864d445f",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/31b66881864d445f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1587987232894,
+        "stop" : 1587987236965,
+        "duration" : 4071
+      }
+    }, {
+      "uid" : "8920bb31cdfa26bb",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/8920bb31cdfa26bb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1587987232894,
+        "stop" : 1587987236965,
+        "duration" : 4071
+      }
+    }, {
+      "uid" : "d0b3c175961279bc",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/20/allure/#testresult/d0b3c175961279bc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1587990992837,
+        "stop" : 1587990995561,
+        "duration" : 2724
+      }
+    }, {
+      "uid" : "fb4343abad44bcad",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/19/allure/#testresult/fb4343abad44bcad",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 == 2",
+      "time" : {
+        "start" : 1587990992837,
+        "stop" : 1587990995561,
+        "duration" : 2724
+      }
+    } ]
+  },
+  "c1e3a73e1328f2b20fdfbc8eff626ba1" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "8deccfb4c5c0ce6b",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/23/allure/#testresult/8deccfb4c5c0ce6b",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 0\n +  where 0 = <bound method Taskpage.get_len of <page.task.Taskpage object at 0x03875890>>()\n +    where <bound method Taskpage.get_len of <page.task.Taskpage object at 0x03875890>> = <page.task.Taskpage object at 0x03875890>.get_len\n +      where <page.task.Taskpage object at 0x03875890> = <test_case.test_task.TestTask object at 0x03875D50>.task_page",
+      "time" : {
+        "start" : 1588043218482,
+        "stop" : 1588043257244,
+        "duration" : 38762
+      }
+    }, {
+      "uid" : "5e9d5d699542637f",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/22/allure/#testresult/5e9d5d699542637f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 0\n +  where 0 = <bound method Taskpage.get_len of <page.task.Taskpage object at 0x03875890>>()\n +    where <bound method Taskpage.get_len of <page.task.Taskpage object at 0x03875890>> = <page.task.Taskpage object at 0x03875890>.get_len\n +      where <page.task.Taskpage object at 0x03875890> = <test_case.test_task.TestTask object at 0x03875D50>.task_page",
+      "time" : {
+        "start" : 1588043218482,
+        "stop" : 1588043257244,
+        "duration" : 38762
+      }
+    }, {
+      "uid" : "b24d9229b30803ab",
+      "reportUrl" : "http://192.168.60.162:8080/job/LT_college/21/allure/#testresult/b24d9229b30803ab",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 0\n +  where 0 = <bound method Taskpage.get_len of <page.task.Taskpage object at 0x03875890>>()\n +    where <bound method Taskpage.get_len of <page.task.Taskpage object at 0x03875890>> = <page.task.Taskpage object at 0x03875890>.get_len\n +      where <page.task.Taskpage object at 0x03875890> = <test_case.test_task.TestTask object at 0x03875D50>.task_page",
+      "time" : {
+        "start" : 1588043218482,
+        "stop" : 1588043257244,
+        "duration" : 38762
+      }
+    } ]
+  }
+}
