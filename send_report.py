@@ -33,7 +33,7 @@ def get_pic():
 def send_emails():
     mail_host = "smtp.cnstrong.cn"  # 设smtp置服务器
     mail_user = "fengzhongjie@cnstrong.cn"  # 发送邮箱
-    mail_pass = "8pmHrQZXHrksdWbR"  # 授权码
+    mail_pass = ""  # 授权码
     sender = 'fengzhongjie@cnstrong.cn'
     receiver = 'eduplan@cnstrong.cn'
 
