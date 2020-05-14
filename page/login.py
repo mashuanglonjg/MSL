@@ -13,7 +13,7 @@ class Loginpage(Page):
     login_loc = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[5]')
     findpwd_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[4]/span')  # 找回密码
     findpwd_title = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/strong')  # 找回密码标题
-    black_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/span')  # 返回
+    back_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/span')  # 返回
 
 
     def findpwd(self):
@@ -26,8 +26,8 @@ class Loginpage(Page):
         """获取找回密码页面的文案"""
         return str(self.findpwd_title.text)
 
-    def black(self):
-        self.black_bt.click()
+    def back(self):
+        self.back_bt.click()
 
 
 

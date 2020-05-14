@@ -16,7 +16,7 @@ class TestLogin():
         login_page = Loginpage(browser)
         login_page.findpwd()
         assert '重置密码' in login_page.get_findpwd_title()
-        login_page.black()
+        login_page.back()
 
     
     def test_login(self,browser):
