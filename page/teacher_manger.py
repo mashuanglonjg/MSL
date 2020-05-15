@@ -25,4 +25,7 @@ class Teacher_manger_page(Page):
 
     def add_teacher(self):
         """增加老师"""
+        self.add_teacher().click()
 
+    def find_teacher_phone(self):
+        """通过号码朝招老师"""
