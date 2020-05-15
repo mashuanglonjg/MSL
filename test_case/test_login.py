@@ -31,7 +31,6 @@ class TestLogin():
         """登录"""
         login_page = Loginpage(browser)
         login_page.login('955112', 'test1234')
-        time.sleep(10)
 
 if __name__ == '__main__':
     pytest.main(["-v", "-s", "test_login.py"])
