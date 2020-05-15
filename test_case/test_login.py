@@ -7,6 +7,7 @@ from conftest import browser
 import pytest
 from page.login import Loginpage
 import allure
+import time
 
 @allure.feature('乐桃学院')
 class TestLogin():
@@ -24,12 +25,13 @@ class TestLogin():
         login_page.service()
         assert '乐桃学院服务协议' in login_page.get_service_title()
         assert 'hello world' in login_page.get_service_text()
+        login_page.service_quit()
 
     def test_login(self,browser):
         """登录"""
         login_page = Loginpage(browser)
         login_page.login('955112', 'test1234')
-
+        time.sleep(10)
 
 if __name__ == '__main__':
-    pytest.main(["-v", "-s", "test_demo.py"])
+    pytest.main(["-v", "-s", "test_login.py"])

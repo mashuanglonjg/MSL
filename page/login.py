@@ -4,7 +4,7 @@
 @Desc    : 登录页
 '''
 from poium import Page, PageElement
-from page.main import Mainpage
+# from page.main import Mainpage
 
 class Loginpage(Page):
     sms_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/span')  # 切换手机号输入
@@ -18,7 +18,7 @@ class Loginpage(Page):
     service_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[3]/em')  # 服务协议
     service_title = PageElement(xpath='/html/body/div[2]/div/div[1]/strong')  # 服务协议title
     service_text = PageElement(class_name='ccp-custom-modal-body')  # 服务协议文本
-
+    service_quit_bt = PageElement(xpath='/html/body/div[2]/div/div[3]/div/span')  # 我知道了
 
 
     def findpwd(self):
@@ -48,6 +48,10 @@ class Loginpage(Page):
         """获取服务协议文本"""
         return str(self.service_text.text)
 
+    def service_quit(self):
+        """点击我知道了"""
+        self.service_quit_bt.click()
+
     def login(self,loginname,password):
         """登录"""
         self.get("https://webapp.leke.cn/lt-web/index.html#/login")
@@ -55,5 +59,5 @@ class Loginpage(Page):
         self.loginname_loc = loginname
         self.password_loc = password
         self.login_loc.click()
-        return Mainpage(self.driver)
+        # return Mainpage(self.driver)
 
