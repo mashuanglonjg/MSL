@@ -9,7 +9,7 @@ from page.login import Loginpage
 import allure
 import time
 
-@allure.feature('乐桃学院')
+@allure.feature('乐桃学院-登录')
 class TestLogin():
     login_page = Loginpage(browser)
     def test_findpwd(self,browser):
