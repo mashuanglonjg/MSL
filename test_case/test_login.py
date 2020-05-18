@@ -30,7 +30,7 @@ class TestLogin():
     def test_login(self,browser):
         """登录"""
         login_page = Loginpage(browser)
-        login_page.login('955112', 'test1234')
+        login_page.login('2512759', 'test1234')
 
 if __name__ == '__main__':
     pytest.main(["-v", "-s", "test_login.py"])

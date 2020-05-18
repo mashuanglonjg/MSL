@@ -7,3 +7,15 @@ test_login.py::TestLogin::test_service
 test_login.py::TestLogin::test_login
 test_login.py::TestLogin::test_service
 test_login.py::TestLogin::test_login
+test_teacher_manger.py::TestTM::test_TM_page
+test_login.py::TestLogin::test_service
+test_teacher_manger.py::TestTM::test_TM_page
+test_teacher_manger.py::TestTM::test_TM_page
+test_teacher_manger.py::TestTM::test_TM_page
+test_teacher_manger.py::TestTM::test_TM_phone
+test_teacher_manger.py::TestTM::test_TM_phone
+test_teacher_manger.py::TestTM::test_TM_phone
+test_teacher_manger.py::TestTM::test_TM_phone
+test_teacher_manger.py::TestTM::test_TM_name
+test_teacher_manger.py::TestTM::test_TM_page
+test_teacher_manger.py::TestTM::test_TM_name
