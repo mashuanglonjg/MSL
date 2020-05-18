@@ -1,10 +1,10 @@
 '''
 @Time    : 2020/04/27 16:03
 @Author  : fzj
-@Desc    : 登录页
+@Desc    : 登录页，根据不同角色返回不同的着陆页
 '''
 from poium import Page, PageElement
-# from page.main import Mainpage
+from page.admin_manger import Adminpage
 
 class Loginpage(Page):
     sms_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/span')  # 切换手机号输入
@@ -52,12 +52,12 @@ class Loginpage(Page):
         """点击我知道了"""
         self.service_quit_bt.click()
 
-    def login(self,loginname,password):
+    def admin_login(self,loginname,password):
         """登录"""
         self.get("https://webapp.leke.cn/lt-web/index.html#/login")
         self.pw_bt.click()
         self.loginname_loc = loginname
         self.password_loc = password
         self.login_loc.click()
-        # return Mainpage(self.driver)
+        return Adminpage(self.driver)
 
