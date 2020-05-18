@@ -30,7 +30,7 @@ class TestTM():
         """查找姓名"""
         name = '冯忠杰'
         tm_page = Loginpage(browser).admin_login('2512759', 'test1234').tc_manger()
-        tm_page.find_name_loc(name)
+        tm_page.find_teacher_name(name)
         assert name ==tm_page.get_name()
 
 if __name__ == '__main__':

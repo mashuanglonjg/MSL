@@ -9,11 +9,6 @@ import allure
 
 driver = None
 
-# 定义基本测试环境
-@pytest.fixture(scope='function')
-def base_url():
-    return RunConfig.url
-
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     '''
@@ -39,7 +34,7 @@ def pytest_runtest_makereport(item):
             allure.attach(driver.get_screenshot_as_png(), "失败截图", allure.attachment_type.PNG)
 
 # 启动浏览器
-@pytest.fixture(scope='class', autouse=True)
+@pytest.fixture(scope='function', autouse=True)
 def browser():
     """
     全局定义浏览器驱动（注意chrome版本要和chrome driver版本匹配）
@@ -100,7 +95,7 @@ def browser():
 
 
 # 关闭浏览器
-@pytest.fixture(scope="class", autouse=True)
+@pytest.fixture(scope="function", autouse=True)
 def browser_close():
     yield driver
     driver.quit()
