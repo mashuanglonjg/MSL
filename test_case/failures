@@ -67,3 +67,6 @@ test_teacher_manger.py::TestTM::test_del_name
 test_teacher_manger.py::TestTM::test_del_name
 test_teacher_manger.py::TestTM::test_edit_name
 test_teacher_manger.py::TestTM::test_del_name
+test_add_teacher.py::TestAddTC::test_addpage
+test_add_teacher.py::TestAddTC::test_add_tc
+test_add_teacher.py::TestAddTC::test_add_tc
