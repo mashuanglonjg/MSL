@@ -52,27 +52,30 @@ class Joinorgpage(Page):
 
 '''
     def org_apply(self):
-        self.get('https://webapp.leke.cn/lt-web/index.html#/join-apply')
+        #self.get('https://webapp.leke.cn/lt-web/index.html#/join-apply')
         self.pic_bt.click()
-        time.sleep(2)
-        WinUpLoadFile().winUpLoadFile("C:\\Users\\Administrator\\Pictures\\1.jpg", "打开")
-        time.sleep(10)
+        WinUpLoadFile().winUpLoadFile("C:\\Users\\Administrator\\Pictures\\1.jpg")
+        time.sleep(20)
         self.name_loc = 'UI自动化机构名称'
         self.briefIntrod_loc = 'UI自动化机构的长简介'
         self.shortIntrod_loc = 'UI自动化机构的短简介'
         self.companyName_loc = 'UI自动化公司名称'
         self.licensepic_bt.click()
-        WinUpLoadFile().winUpLoadFile("C:\\Users\\Administrator\\Pictures\\2.bmp", "打开")
+        time.sleep(2)
+        WinUpLoadFile().winUpLoadFile("C:\\Users\\Administrator\\Pictures\\2.bmp")
+        time.sleep(2)
         self.licenseCode_loc = 'yingyezhizhao20200514'
         self.certpic_bt.click()
-        WinUpLoadFile().winUpLoadFile("C:\\Users\\Administrator\\Pictures\\3.bmp", "打开")
+        time.sleep(2)
+        WinUpLoadFile().winUpLoadFile("C:\\Users\\Administrator\\Pictures\\3.bmp")
+        time.sleep(2)
         self.certNum = 'jiaoyuzizhi20200514'
         self.contactName_loc = 'UI自动化'
         self.phone_loc = '15905140001'
         self.email_loc = '15905140001@cnstrong.cn'
         self.isReadedAgreement_loc.click()
         self.submit_bt.click()
-        time.sleep(10)
+        time.sleep(2)
         Joinorgpage(self.driver)
         self.confirm_bt.click()
 
@@ -82,9 +85,13 @@ class Joinorgpage(Page):
         :return:
         """
         db = MysqlUtil()
-        sql = ''
         userid = db.fetchone('select userid from lt_user where isDeleted = 0 and phone = 15905140001;')
         orgid = db.fetchone("select id from lt_org where isDeleted = 0 and name = 'UI自动化机构名称';")
         db.update("UPDATE lt_org set status = 2 where name = 'UI自动化机构名称' and isDeleted = 0;UPDATE lt_user set roleId = 101 where isDeleted = 0 and userid = " + userid +  ";")
         db.insert("INSERT INTO lt_org_teacher_mapping(userId, orgId, userName, summary, photo, isDeleted, createdOn, createdBy, modifiedOn, modifiedBy) VALUES (" + userid + ", " + orgid + ", NULL, NULL, NULL, 0, NOW(), 0, NOW(), 888);")
+<<<<<<< HEAD
 '''
+=======
+
+
+>>>>>>> 0d68df74523f0c5736fec808c8736d31b8e2f46a

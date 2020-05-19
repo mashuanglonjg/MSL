@@ -67,6 +67,7 @@ test_teacher_manger.py::TestTM::test_del_name
 test_teacher_manger.py::TestTM::test_del_name
 test_teacher_manger.py::TestTM::test_edit_name
 test_teacher_manger.py::TestTM::test_del_name
+<<<<<<< HEAD
 test_add_teacher.py::TestAddTC::test_addpage
 test_add_teacher.py::TestAddTC::test_add_tc
 test_add_teacher.py::TestAddTC::test_add_tc
@@ -78,3 +79,13 @@ test_org.py::TestLogin::test_org
 test_org.py::TestLogin::test_org
 test_org.py::TestLogin::test_org
 test_org.py::TestLogin::test_org
+=======
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+test_org.py::TestOrg::test_org
+>>>>>>> 0d68df74523f0c5736fec808c8736d31b8e2f46a
