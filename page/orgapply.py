@@ -1,7 +1,7 @@
 from poium import Page, PageElement
 import time
-from util.winuploadfile import WinUpLoadFile
-from util.MysqlUtil import MysqlUtil
+# from util.winuploadfile import WinUpLoadFile
+# from util.MysqlUtil import MysqlUtil
 
 class Joinorgpage(Page):
 
@@ -10,7 +10,8 @@ class Joinorgpage(Page):
     机构信息填写
     """
     #上传机构图片
-    pic_bt = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[1]/div[2]/div[1]/div[2]/div/span/div/div[2]/div[1]/span/div/span/div')
+    pic_bt = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[1]/div[2]'
+                                 '/div[1]/div[2]/div/span/div/div[2]/div[1]/span/div/span/input')
     #机构名称输入框
     name_loc = PageElement(id_ = 'JoinApply_name')
     #机构简介输入框
@@ -20,11 +21,13 @@ class Joinorgpage(Page):
     #公司名称
     companyName_loc = PageElement(id_ = 'JoinApply_companyName')
     #资质证明
-    licensepic_bt = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[3]/div[2]/div/span/div/div[2]/div[1]/span/div/span/div/span')
+    licensepic_bt = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[3]/div[2]/div/'
+                                        'span/div/div[2]/div[1]/span/div/span/div/span')
     #资质证明编码
     licenseCode_loc = PageElement(id_ = 'JoinApply_licenseCode')
     #教育资质证明
-    certpic_bt = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[5]/div[2]/div/span/div/div[2]/div[1]/span/div/span/div/span')
+    certpic_bt = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[5]/div[2]/div/'
+                                     'span/div/div[2]/div[1]/span/div/span/div/span')
     #教育资质编码
     certNum_loc = PageElement(id_ = 'JoinApply_certNum')
     #联系人
@@ -40,7 +43,14 @@ class Joinorgpage(Page):
     #二次确认
     confirm_bt = PageElement(css = 'body > div:nth-child(10) > div > div.ccp-mc-confirm-footer > div.ccp-custom-button.small.primary.ccp-mc-confirm-footer-btn.radius > span')
 
+    def org_apply(self):
+        self.get('https://webapp.leke.cn/lt-web/index.html#/join-apply')
+        time.sleep(5)
+        self.pic_bt = 'C:\\Users\\Administrator\\Desktop\\123.png'
+        time.sleep(10)
 
+
+'''
     def org_apply(self):
         self.get('https://webapp.leke.cn/lt-web/index.html#/join-apply')
         self.pic_bt.click()
@@ -67,13 +77,14 @@ class Joinorgpage(Page):
         self.confirm_bt.click()
 
     def org_pass(self):
-        '''
+        """
         后台审核通过+角色变化
         :return:
-        '''
+        """
         db = MysqlUtil()
         sql = ''
         userid = db.fetchone('select userid from lt_user where isDeleted = 0 and phone = 15905140001;')
         orgid = db.fetchone("select id from lt_org where isDeleted = 0 and name = 'UI自动化机构名称';")
         db.update("UPDATE lt_org set status = 2 where name = 'UI自动化机构名称' and isDeleted = 0;UPDATE lt_user set roleId = 101 where isDeleted = 0 and userid = " + userid +  ";")
         db.insert("INSERT INTO lt_org_teacher_mapping(userId, orgId, userName, summary, photo, isDeleted, createdOn, createdBy, modifiedOn, modifiedBy) VALUES (" + userid + ", " + orgid + ", NULL, NULL, NULL, 0, NOW(), 0, NOW(), 888);")
+'''

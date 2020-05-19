@@ -9,7 +9,7 @@ import allure
 class TestLogin():
     """机构申请"""
     def test_org(self, browser):
-        org_page = Loginpage(browser).login('15905140001', 'test1234').org()
+        org_page = Loginpage(browser).admin_login('18888888888', 'test1234').add_apply()
         org_page.org_apply()
 
 

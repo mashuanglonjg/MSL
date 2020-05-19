@@ -7,6 +7,7 @@
 from poium import Page, PageElement
 from page.teacher_manger import Teacher_mangerpage
 from page.add_teacher import AddTc_page
+from page.orgapply import Joinorgpage
 import time
 
 class Adminpage(Page):
@@ -31,3 +32,10 @@ class Adminpage(Page):
         self.add_teacher_bt.click()
         time.sleep(1)
         return AddTc_page(self.driver)
+
+    def add_apply(self):
+        # self.school_manger_bt.click()  # 默认打开了导航栏
+
+        self.get('https://webapp.leke.cn/lt-web/index.html#/join-apply')
+        time.sleep(2)
+        return Joinorgpage(self.driver)
