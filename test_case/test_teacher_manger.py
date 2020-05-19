@@ -46,7 +46,7 @@ class TestTM():
     def test_del_name(self,browser):
         """移除老师"""
         name = '编辑测试'
-        tm_page = Loginpage(browser).admin_login('2512759', 'test1234').tc_manger()
+        tm_page = Loginpage(browser).admin_login('15905180001', 'test1234').tc_manger()
         tm_page.del_TC(name)
         tm_page.find_teacher_name(name)
         assert '暂无数据' == tm_page.find_date()
