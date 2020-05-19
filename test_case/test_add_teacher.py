@@ -28,8 +28,9 @@ class TestAddTC():
 
     def test_add_tcs(self,browser):
         """批量添加老师"""
-        pass
-
+        add_page = Loginpage(browser).admin_login('15905180001', 'test1234').add_teachers()
+        add_page.import_tcs()
+        assert 'UI自动化老师添加' in add_page.get_im_status()
 
 if __name__ == '__main__':
     pytest.main(["-v", "-s", "test_add_teacher.py"])
