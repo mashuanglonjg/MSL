@@ -88,5 +88,3 @@ test_org.py::TestOrg::test_org
 test_org.py::TestOrg::test_org
 test_org.py::TestOrg::test_org
 test_org.py::TestOrg::test_org
->>>>>>> 0d68df74523f0c5736fec808c8736d31b8e2f46a
-test_login.py::TestLogin::test_login
