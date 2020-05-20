@@ -91,7 +91,3 @@ class Joinorgpage(Page):
         db.insert("INSERT INTO lt_org_teacher_mapping(userId, orgId, userName, summary, photo, isDeleted, createdOn, createdBy, modifiedOn, modifiedBy) VALUES (" + userid + ", " + orgid + ", NULL, NULL, NULL, 0, NOW(), 0, NOW(), 888);")
 <<<<<<< HEAD
 '''
-=======
-
-
->>>>>>> 0d68df74523f0c5736fec808c8736d31b8e2f46a
