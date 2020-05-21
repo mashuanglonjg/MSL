@@ -1,17 +1,35 @@
-from conftest import browser
 import pytest
 from page.login import Loginpage
-from util.MysqlUtil import MysqlUtil
+import pymysql
 import allure
 
 
-@allure.feature('机构申请')
+@allure.feature('乐桃学院-机构申请')
 class TestOrg():
     """机构申请"""
     def test_org(self, browser):
-        org_page = Loginpage(browser).user_login('15905190001', 'test1234').org()
+        org_page = Loginpage(browser).user_login('17777777777', 'test1234').org()
         org_page.org_apply()
+        assert '审核资料已提交' == org_page.get_auditing()
 
+    def test_del(self):
+        """删除测试数据"""
+        conn = pymysql.connect(host="192.168.20.80", port=61306, user="lekeAI", password="FreAv0Ed",
+                               database="ltUser", charset="utf8")
+        # 获取一个光标
+        cursor = conn.cursor()
+        # 定义将要执行的SQL语句
+        sql = "delete from lt_org where name=%s;"
+        name = "UI自动化机构"
+        # 拼接并执行SQL语句
+        cursor.execute(sql, [name])
+        # 涉及写操作注意要提交
+        conn.commit()
+        # 关闭连接
+        cursor.close()
+        conn.close()
+
+'''
     def test_pass(self):
         """
         后台审核通过+角色变化
@@ -42,6 +60,6 @@ class TestOrg():
 
         pass
 
-
+'''
 if __name__ == '__main__':
     pytest.main(["-v", "-s", "test_org.py"])

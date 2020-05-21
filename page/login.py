@@ -20,6 +20,7 @@ class Loginpage(Page):
     service_title = PageElement(xpath='/html/body/div[2]/div/div[1]/strong')  # 服务协议title
     service_text = PageElement(class_name='ccp-custom-modal-body')  # 服务协议文本
     service_quit_bt = PageElement(xpath='/html/body/div[2]/div/div[3]/div/span')  # 我知道了
+    title_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[1]/ul/li[2]/div/div/span')  # 定位到教务教学断言登录成功
 
 
     def findpwd(self):
@@ -53,7 +54,11 @@ class Loginpage(Page):
         """点击我知道了"""
         self.service_quit_bt.click()
 
-    def admin_login(self,loginname,password):
+    def get_title_loc(self):
+        """获取机构导航栏文本"""
+        return str(self.title_loc.text)
+
+    def admin_login(self, loginname, password):
         """登录"""
         self.get("https://webapp.leke.cn/lt-web/index.html#/login")
         self.pw_bt.click()
@@ -62,7 +67,7 @@ class Loginpage(Page):
         self.login_loc.click()
         return Adminpage(self.driver)
 
-    def user_login(self,loginname,password):
+    def user_login(self, loginname, password):
         """登录"""
         self.get("https://webapp.leke.cn/lt-web/index.html#/login")
         self.pw_bt.click()

@@ -7,7 +7,7 @@ class Importtcspage(Page):
     success = PageElement(xpath = '//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div/div/div/div/div/div/table/tbody/tr/td[2]')
 
     def import_tcs(self):
-        self.file_bt = r"C:\Users\Administrator\Downloads\UItest.xls"
+        self.file_bt = r"E:\pic\UItest.xls"
         time.sleep(5)
         PageWait(self.submit_bt)
         self.submit_bt.click()
