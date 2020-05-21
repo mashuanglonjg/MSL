@@ -10,7 +10,7 @@ class TestOrg():
     def test_org(self, browser):
         org_page = Loginpage(browser).user_login('16666666666', 'test1234').org()
         org_page.org_apply()
-        assert '审核资料已提交' == org_page.get_auditing()
+        assert '审核资料已提交' in org_page.get_auditing()
 
     def test_del(self):
         """删除测试数据"""

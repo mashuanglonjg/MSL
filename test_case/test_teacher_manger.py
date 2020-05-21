@@ -29,23 +29,31 @@ class TestTM():
 
     def test_TM_name(self,browser):
         """查找姓名"""
-        name = '自动化测试'
+        name = 'UI自动化测试'
         tm_page = Loginpage(browser).admin_login('18888888888', 'test1234').tc_manger()
         tm_page.find_teacher_name(name)
         assert name == tm_page.get_name()
 
     def test_edit_name(self,browser):
         """编辑老师"""
-        name = '自动化测试'  # 老师姓名
+        name = 'UI自动化测试'  # 老师姓名
         edit_name = '编辑测试'  # 编辑老师姓名
         tm_page = Loginpage(browser).admin_login('18888888888', 'test1234').tc_manger()
         tm_page.find_teacher_name(name)
         tm_page.edit_TC(edit_name)
         assert edit_name == tm_page.get_name()
 
-    def test_del_name(self,browser):
+    def test_del_name(self, browser):
         """移除老师"""
         name = '编辑测试'
+        tm_page = Loginpage(browser).admin_login('18888888888', 'test1234').tc_manger()
+        tm_page.del_TC(name)
+        tm_page.find_teacher_name(name)
+        assert '暂无数据' == tm_page.find_date()
+
+    def test_del_name1(self, browser):
+        """移除老师"""
+        name = 'UI自动化测试批量添加'
         tm_page = Loginpage(browser).admin_login('18888888888', 'test1234').tc_manger()
         tm_page.del_TC(name)
         tm_page.find_teacher_name(name)

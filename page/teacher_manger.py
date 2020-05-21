@@ -19,7 +19,7 @@ class Teacher_mangerpage(Page):
     find_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[3]/span')  # 查询
     edit_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/tbody/tr[1]/td[5]/div/span[1]')  # 编辑
     del_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/tbody/tr[1]/td[5]/div/span[2]')  # 删除
-    del1_bt = PageElement(id_='sureBtn')  # 二次确认
+    del1_bt = PageElement(name='sureBtn')  # 二次确认
     tc_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[6]/div[2]/div[1]/div/input')  # 编辑中的老师名字
     name_save_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/span')  # 保存
     name_save1_bt = PageElement(name='sureBtn')  # 二次确认

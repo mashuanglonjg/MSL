@@ -22,14 +22,14 @@ class TestAddTC():
     def test_add_tc(self, browser):
         """单个添加老师"""
         add_page = Loginpage(browser).admin_login('18888888888', 'test1234').add_tc()
-        add_page.add_teacher('17777777777', '自动化测试', '这是UI自动化数据, 这是UI自动化数据')
+        add_page.add_teacher('17777777777', 'UI自动化测试', '这是UI自动化数据, 这是UI自动化数据')
         assert '自动化测试' == add_page.get_tc_name()
 
     def test_add_tcs(self, browser):
         """批量添加老师"""
         add_page = Loginpage(browser).admin_login('18888888888', 'test1234').add_teachers()
         add_page.import_tcs()
-        assert 'UI自动化老师添加' in add_page.get_im_status()
+        assert 'UI自动化批量添加' in add_page.get_im_status()
 
 if __name__ == '__main__':
     pytest.main(["-v", "-s", "test_add_teacher.py"])
