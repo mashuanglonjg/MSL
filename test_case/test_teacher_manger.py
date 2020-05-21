@@ -22,7 +22,7 @@ class TestTM():
 
     def test_TM_phone(self,browser):
         """查找号码"""
-        phone = '199999999'
+        phone = '17777777777'
         tm_page = Loginpage(browser).admin_login('18888888888', 'test1234').tc_manger()
         tm_page.find_teacher_phone(phone)
         assert phone == tm_page.get_phone()

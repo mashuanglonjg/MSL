@@ -4,9 +4,7 @@
 @doc   : 
 '''
 
-import sys
-sys.path.append('../public/')
-import emails
+
 from selenium import webdriver
 import time
 import datetime
