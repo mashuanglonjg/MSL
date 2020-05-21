@@ -17,7 +17,7 @@ def get_pic():
 
     driver = webdriver.Chrome()
     driver.maximize_window()
-    driver.get('http://192.168.24.123:8080/view/cnstrong/job/LT_college/allure/')
+    driver.get('http://192.168.24.123:8080/view/LT_college/job/LT_college/allure/')
     driver.find_element_by_name('j_username').send_keys('AI')
     driver.find_element_by_name('j_password').send_keys('123456')
     driver.find_element_by_name('Submit').click()
