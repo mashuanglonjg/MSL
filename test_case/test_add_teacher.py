@@ -23,7 +23,7 @@ class TestAddTC():
         """单个添加老师"""
         add_page = Loginpage(browser).admin_login('18888888888', 'test1234').add_tc()
         add_page.add_teacher('17777777777', 'UI自动化测试', '这是UI自动化数据, 这是UI自动化数据')
-        assert '自动化测试' == add_page.get_tc_name()
+        assert 'UI自动化测试' == add_page.get_tc_name()
 
     def test_add_tcs(self, browser):
         """批量添加老师"""

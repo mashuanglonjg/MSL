@@ -53,7 +53,7 @@ class TestTM():
 
     def test_del_name1(self, browser):
         """移除老师"""
-        name = 'UI自动化测试批量添加'
+        name = 'UI自动化批量添加'
         tm_page = Loginpage(browser).admin_login('18888888888', 'test1234').tc_manger()
         tm_page.del_TC(name)
         tm_page.find_teacher_name(name)
