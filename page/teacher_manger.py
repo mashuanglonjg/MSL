@@ -22,7 +22,7 @@ class Teacher_mangerpage(Page):
     del1_bt = PageElement(id_='sureBtn')  # 二次确认
     tc_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[6]/div[2]/div[1]/div/input')  # 编辑中的老师名字
     name_save_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/span')  # 保存
-    name_save1_bt = PageElement(xpath='/html/body/div[4]/div/div[3]/div[2]/span')  # 二次确认
+    name_save1_bt = PageElement(name='sureBtn')  # 二次确认
     find_date_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div[2]/div/p')  # 暂无数据
 
     # def teacher_manger(self):

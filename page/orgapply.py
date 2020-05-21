@@ -38,7 +38,7 @@ class Joinorgpage(Page):
     #提交审核
     submit_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/form/div[3]/div/span')
     #二次确认
-    confirm_bt = PageElement(name = 'sureBtn')
+    confirm_bt = PageElement(name='sureBtn')
     auditing_loc = PageElement(xpath='/html/body/div/div/div[2]/p[1]')
 
     def org_apply(self):

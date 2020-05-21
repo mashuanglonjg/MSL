@@ -14,7 +14,7 @@ class AddTc_page(Page):
     Name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[4]/div[2]/div[1]/div/input')  # 姓名
     Content_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[5]/div[2]/div[1]/div/textarea')  # 简介
     add_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/span')  # 提交按钮
-    add1_bt = PageElement(xpath='/html/body/div[4]/div/div[2]/div[2]/span')  # 确认
+    add1_bt = PageElement(name='sureBtn')  # 确认
     name_loc = PageElement(
         xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/tbody/tr/td[1]')  # 结果中的姓名
 

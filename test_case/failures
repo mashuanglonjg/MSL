@@ -117,3 +117,7 @@ test_teacher_manger.py::TestTM::test_TM_page
 test_teacher_manger.py::TestTM::test_TM_phone
 test_teacher_manger.py::TestTM::test_edit_name
 test_teacher_manger.py::TestTM::test_del_name
+test_org.py::TestOrg::test_org
+test_teacher_manger.py::TestTM::test_TM_phone
+test_teacher_manger.py::TestTM::test_edit_name
+test_teacher_manger.py::TestTM::test_del_name
