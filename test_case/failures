@@ -131,3 +131,7 @@ test_teacher_manger.py::TestTM::test_del_name1
 test_teacher_manger.py::TestTM::test_TM_name
 test_teacher_manger.py::TestTM::test_edit_name
 test_add_teacher.py::TestAddTC::test_add_tc
+<<<<<<< HEAD
+=======
+test_teacher_manger.py::TestTM::test_del_name1
+>>>>>>> b72dd9cff90b1408aca4281975e3e908fde53d31

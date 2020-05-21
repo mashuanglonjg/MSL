@@ -6,6 +6,7 @@
 from poium import Page, PageElement
 from page.admin_manger import Adminpage
 from page.usercenter import Usercenter_page
+import time
 
 class Loginpage(Page):
     sms_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/span')  # 切换手机号输入
