@@ -33,7 +33,7 @@ def send_emails():
     mail_user = "fengzhongjie@cnstrong.cn"  # 发送邮箱
     mail_pass = ""  # 授权码
     sender = 'fengzhongjie@cnstrong.cn'
-    receiver = 'eduplan@cnstrong.cn'
+    receiver = ['fengzhongjie@cnstrong.cn', 'guojianxiu@cnstrong.cn']
 
     # 以html格式构建邮件内容
     send_str = '<html><body>'
