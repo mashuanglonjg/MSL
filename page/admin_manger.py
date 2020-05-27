@@ -8,6 +8,7 @@ from poium import Page, PageElement
 from page.teacher_manger import Teacher_mangerpage
 from page.add_teacher import AddTc_page
 from page.import_teachers import Importtcspage
+from page.course_manger import Coursemanger_page
 import time
 
 class Adminpage(Page):
@@ -16,6 +17,7 @@ class Adminpage(Page):
     teacher_manger_bt = PageElement(xpath='//*[@id="2$Menu"]/li/div/span')  # 老师管理
     add_teacher_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div[2]/span')  # 添加老师
     add_teacher_all_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div[1]/span')  # 批量添加老师
+    course_bt = PageElement(xpath='//*[@id="2$Menu"]/li[2]/div')
 
     def tc_manger(self):
         # self.school_manger_bt.click()  # 默认打开了导航栏
@@ -38,3 +40,8 @@ class Adminpage(Page):
         self.add_teacher_all_bt.click()
         time.sleep(1)
         return Importtcspage(self.driver)
+
+    def course_manger(self):
+        self.course_bt.click()
+        time.sleep(1)
+        return Coursemanger_page(self.driver)

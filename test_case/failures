@@ -135,3 +135,19 @@ test_add_teacher.py::TestAddTC::test_add_tc
 =======
 test_teacher_manger.py::TestTM::test_del_name1
 >>>>>>> b72dd9cff90b1408aca4281975e3e908fde53d31
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_create_live
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
