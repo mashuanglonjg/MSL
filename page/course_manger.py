@@ -33,6 +33,10 @@ class Coursemanger_page(Page, PageSelect):
                                  'tbody/tr/td[6]/div/span[4]')  # 分享
     up_down_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table'
                                    '/tbody/tr/td[6]/div/span[5]')  # 上下架
+    go_edit_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table'
+                                   '/tbody/tr[1]/td[6]/div/span[1]')  # 继续编辑
+    del_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table/'
+                               'tbody/tr[1]/td[6]/div/span[2]')  # 删除
 
     def creat_live(self):
         """创建直播课"""
@@ -49,7 +53,3 @@ class Coursemanger_page(Page, PageSelect):
         print("查找已发布的直播课")
         print(str(self.search_type1_loc.text))
         self.search_bt.click()
-
-
-
-

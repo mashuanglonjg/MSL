@@ -151,3 +151,7 @@ test_course_manger.py::TestCourse_manger::test_search_course
 test_course_manger.py::TestCourse_manger::test_create_live
 test_course_manger.py::TestCourse_manger::test_search_course
 test_course_manger.py::TestCourse_manger::test_search_course
+test_account_set.py::TestAddTC::test_info
+test_account_set.py::TestAddTC::test_nick
+test_account_set.py::TestAddTC::test_nick
+test_account_set.py::TestAddTC::test_nick

@@ -9,6 +9,7 @@ from page.teacher_manger import Teacher_mangerpage
 from page.add_teacher import AddTc_page
 from page.import_teachers import Importtcspage
 from page.course_manger import Coursemanger_page
+from page.account_set import Info_page
 import time
 
 class Adminpage(Page):
@@ -18,6 +19,8 @@ class Adminpage(Page):
     add_teacher_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div[2]/span')  # 添加老师
     add_teacher_all_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div[1]/span')  # 批量添加老师
     course_bt = PageElement(xpath='//*[@id="2$Menu"]/li[2]/div')
+    updown_bt = PageElement(xpath='//*[@id="root"]/div/div[1]/div/div[2]/div[3]/i')  # 下拉个人中心
+    account_bt = PageElement(xpath='//*[@id="root"]/div/div[1]/div/div[2]/div[3]/div/p[4]')  # 个人中心
 
     def tc_manger(self):
         # self.school_manger_bt.click()  # 默认打开了导航栏
@@ -35,13 +38,22 @@ class Adminpage(Page):
         return AddTc_page(self.driver)
 
     def add_teachers(self):
+        """添加老师"""
         self.teacher_manger_bt.click()
         time.sleep(1)
         self.add_teacher_all_bt.click()
         time.sleep(1)
         return Importtcspage(self.driver)
 
+    def account_in(self):
+        """进入个人中心"""
+        self.updown_bt.click()
+        self.account_bt.click()
+        return Info_page(self.driver)
+
+
     def course_manger(self):
+        """"进入课程管理"""
         self.course_bt.click()
         time.sleep(1)
         return Coursemanger_page(self.driver)
