@@ -4,10 +4,8 @@
 @doc   : 教师管理页面相关用例
 '''
 
-from conftest import browser
 import pytest
 from page.login import Loginpage
-from page.admin_manger import Adminpage
 import allure
 import time
 

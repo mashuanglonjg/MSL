@@ -155,3 +155,14 @@ test_account_set.py::TestAddTC::test_info
 test_account_set.py::TestAddTC::test_nick
 test_account_set.py::TestAddTC::test_nick
 test_account_set.py::TestAddTC::test_nick
+test_course_manger.py::TestCourse_manger::test_create_live
+test_course_manger.py::TestCourse_manger::test_create_live
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_course_manger.py::TestCourse_manger::test_search_course
+test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
+test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
+test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
+test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
+test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
