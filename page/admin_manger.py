@@ -9,6 +9,7 @@ from page.teacher_manger import Teacher_mangerpage
 from page.add_teacher import AddTc_page
 from page.import_teachers import Importtcspage
 from page.course_manger import Coursemanger_page
+from page.live_lesson_info import Live_lesson_page
 from page.account_set import Info_page
 import time
 
@@ -57,3 +58,9 @@ class Adminpage(Page):
         self.course_bt.click()
         time.sleep(1)
         return Coursemanger_page(self.driver)
+
+    def create_course(self):
+        """"课程发布"""
+        self.course_bt.click()
+        time.sleep(1)
+        return Live_lesson_page(self.driver)
