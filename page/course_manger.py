@@ -6,9 +6,9 @@
 
 from poium import Page, PageSelect, PageElement
 import time
+from page.lesson_name_list import Name_list_page
 
 class Coursemanger_page(Page, PageSelect):
-
 
     search_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[4]/span')  # 查找按钮
     search_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div/input')  # 搜索课程名字
@@ -40,7 +40,7 @@ class Coursemanger_page(Page, PageSelect):
                                    '/tbody/tr[1]/td[6]/div/span[1]')  # 继续编辑
     del_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table/'
                                'tbody/tr[1]/td[6]/div/span[2]')  # 删除
-
+    del1_bt = PageElement(name='shanchu-ok')  # 二次确认
 
     def search_course(self, course_name):
         """查找已发布的直播课"""
@@ -62,4 +62,15 @@ class Coursemanger_page(Page, PageSelect):
 
     def del_course(self):
         """删除直播课"""
+        self.del_bt.click()
+        self.del1_bt.click()
+
+
+    def name_list(self):
+        """上课名单"""
+        self.stu_name_bt.click()
+        return Name_list_page(self.driver)
+
+
+
 

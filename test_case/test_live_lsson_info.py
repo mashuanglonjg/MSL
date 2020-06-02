@@ -21,8 +21,3 @@ class TestLive_lesson_info():
         assert '￥' + str(int(num) * int(money)) == course_page.get_course_money()
         assert course_name == course_page.get_course_name()
         assert '直播课' == course_page.get_course_type()
-
-
-
-
-

@@ -4,10 +4,8 @@
 @doc   : 
 '''
 
-from conftest import browser
 import pytest
 from page.login import Loginpage
-from page.admin_manger import Adminpage
 import allure
 import time
 
