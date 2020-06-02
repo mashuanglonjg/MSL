@@ -7,6 +7,7 @@
 from poium import Page, PageSelect, PageElement
 import time
 from page.lesson_name_list import Name_list_page
+from page.live_lesson_info import Live_lesson_page
 
 class Coursemanger_page(Page, PageSelect):
 
@@ -71,6 +72,7 @@ class Coursemanger_page(Page, PageSelect):
         self.stu_name_bt.click()
         return Name_list_page(self.driver)
 
-
-
-
+    def goon_edit(self):
+        """继续编辑"""
+        self.go_edit_bt.click()
+        return Live_lesson_page(self.driver)

@@ -13,7 +13,6 @@ class Importtcspage(Page):
         self.submit_bt.click()
 
     def get_im_status(self):
-        print(str(self.success.text))
         return str(self.success.text)
 
 
