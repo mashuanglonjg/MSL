@@ -185,3 +185,6 @@ test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
 test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
 test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
 test_live_lsson_info.py::TestLive_lesson_info::test_live_lesson_info_save
+test_add_lesson_stu.py::TestAdd_stu::test_add_stu
+test_add_lesson_stu.py::TestAdd_stu::test_add_stu
+test_add_lesson_stu.py::TestAdd_stu::test_add_stu

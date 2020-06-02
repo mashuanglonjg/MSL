@@ -28,8 +28,8 @@ class Coursemanger_page(Page, PageSelect):
                                          '/div/div/table/tbody/tr/td[1]/div/div[2]/p[2]')  # 搜索结果中的课程价格
     create_lesson_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div'
                                          '/table/tbody/tr/td[6]/div/span[1]')  # 排课
-    stu_name_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table'
-                                    '/tbody/tr/td[6]/div/span[2]')  # 上课名单
+    stu_name_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table'
+                                    '/tbody/tr/td[6]/div/span[1]')  # 上课名单
     modif_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/tbody'
                                  '/tr/td[6]/div/span[3]')  # 修改
     share_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/'
