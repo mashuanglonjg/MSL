@@ -7,7 +7,7 @@
 from poium import Page, PageSelect, PageElement
 import time
 from page.lesson_name_list import Name_list_page
-from page.live_lesson_info import Live_lesson_page
+from page.add_lesson_class import AddLesson_class
 
 class Coursemanger_page(Page, PageSelect):
 
@@ -42,6 +42,7 @@ class Coursemanger_page(Page, PageSelect):
     del_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table/'
                                'tbody/tr[1]/td[6]/div/span[2]')  # 删除
     del1_bt = PageElement(name='shanchu-ok')  # 二次确认
+    next_bt = PageElement(name='nextBtn')  # 下一步
 
     def search_course(self, course_name):
         """查找已发布的直播课"""
@@ -75,4 +76,5 @@ class Coursemanger_page(Page, PageSelect):
     def goon_edit(self):
         """继续编辑"""
         self.go_edit_bt.click()
-        return Live_lesson_page(self.driver)
+        self.next_bt.click()
+        return AddLesson_class(self.driver)
