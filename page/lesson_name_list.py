@@ -10,15 +10,13 @@ import time
 
 class Name_list_page(Page, PageSelect):
 
-    add_stu_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div[2]/span')  # 添加学员
-    add_stus_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div[1]/span')  # 批量导入
-    search_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[3]/span')  # 查询
-    name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div/input')  # 姓名
-    phone_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div[2]/div/input')  # 手机号
-    r_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/'
-                                   'div/div/div/table/tbody/tr/td[1]')  # 查找结果中的名字
-    remove_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div'
-                                   '/div/div/table/tbody/tr/td[5]/div/span')  # 移除
+    add_stu_bt = PageElement(xpath='(//span[text()="添加学员"])')  # 添加学员
+    add_stus_bt = PageElement(xpath='(//span[text()="批量导入"])')  # 批量导入
+    search_bt = PageElement(xpath='(//span[text()="查询"])')  # 查询
+    name_loc = PageElement(xpath='(//input[@class="ant-input"])[1]')  # 姓名
+    phone_loc = PageElement(xpath='(//input[@class="ant-input"])[2]')  # 手机号
+    r_name_loc = PageElement(xpath='(//td[@class="ant-table-row-cell-break-word"])[1]')  # 查找结果中的名字
+    remove_loc = PageElement(xpath='(//span[text()="移除"])[1]')  # 移除
     remove1_loc = PageElement(name='remove-ok')  # 二次确认
 
     def add_stu(self):

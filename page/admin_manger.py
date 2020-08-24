@@ -14,14 +14,14 @@ from page.account_set import Info_page
 import time
 
 class Adminpage(Page):
-    home_page_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[1]/ul/li[1]/div')  # 导航栏首页
-    school_manger_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[1]/ul/li[2]/div/div/span')  # 教学教务
-    teacher_manger_bt = PageElement(xpath='//*[@id="2$Menu"]/li/div/span')  # 老师管理
-    add_teacher_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div[2]/span')  # 添加老师
-    add_teacher_all_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div[1]/span')  # 批量添加老师
-    course_bt = PageElement(xpath='//*[@id="2$Menu"]/li[2]/div')
-    updown_bt = PageElement(xpath='//*[@id="root"]/div/div[1]/div/div[2]/div[3]/i')  # 下拉个人中心
-    account_bt = PageElement(xpath='//*[@id="root"]/div/div[1]/div/div[2]/div[3]/div/p[4]')  # 个人中心
+    home_page_bt = PageElement(xpath='//span[text()="首页"]')  # 导航栏首页
+    school_manger_bt = PageElement(xpath='//span[text()="教务教学"]')  # 教学教务
+    teacher_manger_bt = PageElement(xpath='//span[text()="老师管理"]')  # 老师管理
+    add_teacher_bt = PageElement(xpath='//span[text()="添加老师"]')  # 添加老师
+    add_teacher_all_bt = PageElement(xpath='//span[text()="批量添加"]')  # 批量添加老师
+    course_bt = PageElement(xpath='//span[text()="课程管理"]')
+    updown_bt = PageElement(xpath='//i[@class="icon iconfont iconglobal-zk-line list-icon"]')  # 下拉个人中心
+    account_bt = PageElement(xpath='//span[text()="个人资料"]')  # 个人中心
 
     def tc_manger(self):
         # self.school_manger_bt.click()  # 默认打开了导航栏

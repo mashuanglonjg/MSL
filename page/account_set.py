@@ -9,11 +9,11 @@ import time
 
 class Info_page(Page):
 
-    info_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[1]/div/p[1]')  # 个人资料title
+    info_loc = PageElement(xpath='//p[@class="unedit-tit"]')  # 个人资料title
     edit_bt = PageElement(name='editBtn')  # 编辑
-    icon_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/span/i')  # 头像
-    nick_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div[1]/p[2]/input')  # 昵称输入框
-    save_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/button[2]')  # 保存
+    icon_bt = PageElement(xpath='//i[@class="icon iconfont iconbianji edit-icon"]')  # 头像
+    nick_loc = PageElement(name='nickNameInput')  # 昵称输入框
+    save_bt = PageElement(xpath='//button[text()="保存"]')  # 保存
     nick_title_loc = PageElement(xpath='//*[@id="root"]/div/div[1]/div/div[2]/div[4]/p')  # 菜单栏头像
 
     def get_title(self):

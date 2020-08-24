@@ -8,7 +8,7 @@ import allure
 class TestOrg():
     """机构申请"""
     def test_org(self, browser):
-        org_page = Loginpage(browser).user_login('16666666666', 'test1234').org()
+        org_page = Loginpage(browser).user_login('1666666xxxx', 'xxxxxxxx').org()
         org_page.org_apply()
         assert '审核资料已提交' in org_page.get_auditing()
 

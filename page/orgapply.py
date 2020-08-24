@@ -8,23 +8,21 @@ class Joinorgpage(Page):
     机构信息填写
     """
     #上传机构图片
-    pic_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[1]/div[2]/div[1]/div[2]/div/span'
-                               '/div/div[2]/div[1]/span/div/span/input')
+    pic_bt = PageElement(xpath='//span[text()="上传图标"]')
     #机构名称输入框
     name_loc = PageElement(id_='JoinApply_name')
     #机构简介输入框
-    brief_loc =  PageElement(xpath='//*[@id="JoinApply_briefIntrod"]')
+    brief_loc =  PageElement(xpath='//textarea[@class="ant-input"]')
     #机构一句话简介
     short_loc = PageElement(id_='JoinApply_shortIntrod')
     #公司名称
     companyName_loc = PageElement(id_='JoinApply_companyName')
     #资质证明
-    licensepic_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[3]/div[2]/div/'
-                                      'span/div/div[2]/div[1]/span/div/span/input')
+    licensepic_bt = PageElement(xpath='(//span[text()="上传图片"])[1]')
     #资质证明编码
     licenseCode_loc = PageElement(id_='JoinApply_licenseCode')
     #教育资质证明
-    certpic_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[5]/div[2]/div/span/div/div[2]/div[1]/span/div/span/input')
+    certpic_bt = PageElement(xpath='(//span[text()="上传图片"])[2]')
     #教育资质编码
     certNum_loc = PageElement(id_='JoinApply_certNum')
     #联系人
@@ -34,9 +32,9 @@ class Joinorgpage(Page):
     #邮箱
     email_loc = PageElement(id_='JoinApply_email')
     #协议
-    isReadedAgreement_loc = PageElement(xpath='//*[@id="JoinApply_isReadedAgreement"]')
+    isReadedAgreement_loc = PageElement(id_='JoinApply_isReadedAgreement')
     #提交审核
-    submit_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/form/div[3]/div/span')
+    submit_bt = PageElement(xpath='//span[text()="提交审核"]')
     #二次确认
     confirm_bt = PageElement(name='sureBtn')
     auditing_loc = PageElement(xpath='/html/body/div/div/div[2]/p[1]')

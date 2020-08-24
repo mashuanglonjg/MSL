@@ -8,19 +8,19 @@ from page.admin_manger import Adminpage
 from page.usercenter import Usercenter_page
 
 class Loginpage(Page):
-    sms_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/span')  # 切换手机号输入
-    pw_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/div[2]/span')  # 切换密码输入
+    sms_bt = PageElement(xpath='//span[text()="密码登录"]')  # 切换手机号输入
+    pw_bt = PageElement(xpath='//span[text()="验证码登录"]')  # 切换密码输入
     loginname_loc = PageElement(name='login-username')
     password_loc = PageElement(name='login-password')
     login_loc = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[5]')
-    findpwd_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[4]/span')  # 找回密码
-    findpwd_title = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/strong')  # 找回密码标题
-    back_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[1]/span')  # 返回
-    service_bt = PageElement(xpath='/html/body/div[1]/div/div[2]/div/div/div[3]/em')  # 服务协议
-    service_title = PageElement(xpath='/html/body/div[2]/div/div[1]/strong')  # 服务协议title
+    findpwd_bt = PageElement(xpath='//span[text()="忘记密码？"]')  # 找回密码
+    findpwd_title = PageElement(xpath='//strong[text()="短信重置密码"]')  # 找回密码标题
+    back_bt = PageElement(xpath='//span[@class="icon iconfont iconglobal-pad-back goback"]')  # 返回
+    service_bt = PageElement(xpath='//em[text()="《服务协议》"]')  # 服务协议
+    service_title = PageElement(xpath='//strong[text()="乐桃学院用户服务条款"]')  # 服务协议title
     service_text = PageElement(class_name='ccp-custom-modal-body')  # 服务协议文本
-    service_quit_bt = PageElement(xpath='/html/body/div[2]/div/div[3]/div/span')  # 我知道了
-    title_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[1]/ul/li[2]/div/div/span')  # 定位到教务教学断言登录成功
+    service_quit_bt = PageElement(xpath='//span[text()="我知道了"]')  # 我知道了
+    title_loc = PageElement(xpath='//span[text()="教务教学"]')  # 定位到教务教学断言登录成功
 
 
     def findpwd(self):

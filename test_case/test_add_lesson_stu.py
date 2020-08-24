@@ -13,7 +13,7 @@ class TestAdd_stu():
     def test_add_stu(self, browser):
         lekeno = '955112'
         name = 'UI自动化'
-        course_page = Loginpage(browser).admin_login('18888888888', 'test1234').course_manger()
+        course_page = Loginpage(browser).admin_login('188888xxxx', 'xxxxxxxx').course_manger()
         course_page.search_course(course_name='test123wan')
         add_stu_page = course_page.name_list()
         add_stu_page.add_stu().add_stu(lekeno)

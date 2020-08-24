@@ -11,20 +11,20 @@ import time
 
 class Live_lesson_page(Page, PageSelect):
 
-    create_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/span')  # 创建课程按钮
+    create_bt = PageElement(xpath='//span[text()="发布课程"]')  # 创建课程按钮
     create_live_bt = PageElement(name='live-lesson')  # 创建直播课
     create_demand_bt = PageElement(name='on-demand-lesson')  # 创建点播课
     course_name_loc = PageElement(name='courseName')  # 课程名称
-    start_date_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div/div[1]/span[1]/div/input')  # 开始时间
-    end_date_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]/div/div[1]/span[2]/div/input')  # 结束时间
-    start_date1_loc = PageElement(xpath='/html/body/div[4]/div/div/div/div/div[1]/div/input')
-    end_date1_loc = PageElement(xpath='/html/body/div[5]/div/div/div/div/div[1]/div/input')
-    class_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[3]/div/div[1]/span')  # 分类
-    class1_loc = PageElement(xpath='/html/body/div[6]/div/div/div/ul/li')  # 一级分类
-    class2_loc = PageElement(xpath='/html/body/div[6]/div/div/div/ul[2]/li[3]')  # 二级分类
+    start_date_loc = PageElement(xpath='(//input[@class="ant-calendar-picker-input ant-input"])[1]')  # 开始时间
+    end_date_loc = PageElement(xpath='(//input[@class="ant-calendar-picker-input ant-input"])[2]')  # 结束时间
+    start_date1_loc = PageElement(xpath='(//input[@class="ant-calendar-picker-input ant-input"])[1]')
+    end_date1_loc = PageElement(xpath='(//input[@class="ant-calendar-picker-input ant-input"])[2]')
+    class_loc = PageElement(xpath='(//input[@class="ant-input ant-cascader-input "])')  # 分类
+    class1_loc = PageElement(xpath='//li[text()="小学"]')  # 一级分类
+    class2_loc = PageElement(xpath='(//li[text()="一年级"])')  # 二级分类
     num_loc = PageElement(name='count')  # 课时数
     money_loc = PageElement(name='unitPrice')  # 单价
-    info_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[9]/div/div[1]')  # 课程介绍
+    info_loc = PageElement(xpath='(//div[@class="z-editor luv-lesson-edit-editor"])')  # 课程介绍
     save_bt = PageElement(name='saveBtn')  # 保存
     next_bt = PageElement(name='nextBtn')  # 下一步
 

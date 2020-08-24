@@ -15,7 +15,7 @@ class TestLive_lesson_info():
         course_name = 'UI自动化测试'
         num = '101'
         money = '99'
-        lesson_page = Loginpage(browser).admin_login('18888888888', 'test1234').create_course()
+        lesson_page = Loginpage(browser).admin_login('188888xxxxx', 'xxxxxxxx').create_course()
         course_page = lesson_page.save_course_info(course_name, num, money)
         course_page.search_course(course_name)
         assert '￥' + str(int(num) * int(money)) == course_page.get_course_money()

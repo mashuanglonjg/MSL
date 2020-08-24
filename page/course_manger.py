@@ -11,36 +11,23 @@ from page.add_lesson_class import AddLesson_class
 
 class Coursemanger_page(Page, PageSelect):
 
-    search_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[4]/span')  # 查找按钮
-    search_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div/input')  # 搜索课程名字
-    search_type_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[2]')  # 搜索类型
-    search_type1_loc = PageElement(xpath='/html/body/div[4]/div/div/div/ul/li[2]')
-    search_status_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[3]/div/div/div/div')  # 搜索状态
-
-    course_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div'
-                                        '/div/table/tbody/tr[1]/td[1]/div/div[2]/p[1]')  # 搜索结果中的课程名字
-    course_no_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div'
-                                           '/div/div/div/div/div[2]/div/p')  # 没有搜索结果的文案
-    course_type_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/'
-                                        'div/div/div/table/tbody/tr[1]/td[4]')  # 搜索结果中的课程类型
-    course_status_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/'
-                                         'div/div/div/div/table/tbody/tr/td[5]')  # 搜索结果中的课程状态
-    course_money_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div'
-                                         '/div/div/table/tbody/tr/td[1]/div/div[2]/p[2]')  # 搜索结果中的课程价格
-    create_lesson_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div'
-                                         '/table/tbody/tr/td[6]/div/span[1]')  # 排课
-    stu_name_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table'
-                                    '/tbody/tr/td[6]/div/span[1]')  # 上课名单
-    modif_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/tbody'
-                                 '/tr/td[6]/div/span[3]')  # 修改
-    share_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table/'
-                                 'tbody/tr/td[6]/div/span[4]')  # 分享
-    up_down_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[4]/div[1]/div/div/div/div/div/div/table'
-                                   '/tbody/tr/td[6]/div/span[5]')  # 上下架
-    go_edit_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table'
-                                   '/tbody/tr[1]/td[6]/div/span[1]')  # 继续编辑
-    del_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div/div/div/div/div/div/table/'
-                               'tbody/tr[1]/td[6]/div/span[2]')  # 删除
+    search_bt = PageElement(xpath='//span[text()="查询"]')  # 查找按钮
+    search_name_loc = PageElement(xpath='//input[@class="ant-input"]')  # 搜索课程名字
+    search_type_loc = PageElement(xpath='(//div[text()="全部"])[1]')  # 搜索类型
+    search_type1_loc = PageElement(xpath='//li[text()="直播课"]')
+    search_status_loc = PageElement(xpath='(//div[text()="全部"])[2]')  # 搜索状态
+    course_name_loc = PageElement(xpath='(//p[@class="luv-lesson-lesson-detail-title"])[1]')  # 搜索结果中的课程名字
+    course_no_name_loc = PageElement(xpath='//p[@class="ant-empty-description"]')  # 没有搜索结果的文案
+    course_type_loc = PageElement(xpath='(//td[@class="ant-table-row-cell-break-word"])[4]')  # 搜索结果中的课程类型
+    course_status_loc = PageElement(xpath='(//td[@class="ant-table-row-cell-break-word"])[5]')  # 搜索结果中的课程状态
+    course_money_loc = PageElement(xpath='//p[@class="luv-lesson-lesson-detail-description"]')  # 搜索结果中的课程价格
+    create_lesson_bt = PageElement(xpath='(//span[text()="排课"])[1]')  # 排课
+    stu_name_bt = PageElement(xpath='(//span[text()="上课名单"])[1]')  # 上课名单
+    modif_bt = PageElement(xpath='(//span[text()="修改"])[1]')  # 修改
+    share_bt = PageElement(xpath='(//span[text()="分享"])[1]')  # 分享
+    up_down_bt = PageElement(xpath='(//span[text()="下架"])[1]')  # 上下架
+    go_edit_bt = PageElement(xpath='(//span[text()="继续编辑"])[1]')  # 继续编辑
+    del_bt = PageElement(xpath='(//span[text()="删除"])[1]')  # 删除
     del1_bt = PageElement(name='shanchu-ok')  # 二次确认
     next_bt = PageElement(name='nextBtn')  # 下一步
 

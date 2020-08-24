@@ -9,26 +9,19 @@ import datetime
 import time
 
 class AddLesson_class(Page):
-    add_class_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/div/span')  # 排课
+    add_class_bt = PageElement(xpath='(//span[text()="排课"])[2]')  # 排课
     pub_lesson_bt = PageElement(name='nextBtn')  # 发布课程
-    class_name_loc = PageElement(xpath='//*[@id="ccp-custom-mask"]/div/div[2]/div/div[1]/div[2]/div[1]/div/input')  # 课时名称
-    teacher_loc = PageElement(xpath='//*[@id="ccp-custom-mask"]/div/div[2]/div/div[2]/div[2]'
-                                    '/div[1]/div/div/div/div/div[1]')  # 授课老师
-    start_time_loc = PageElement(xpath='//*[@id="ccp-custom-mask"]/div/div[2]/div/div[3]'
-                                     '/div[2]/div[1]/div/span/div/input')  # 课程开始时间
+    class_name_loc = PageElement(xpath='//input[@class="ant-input"]')  # 课时名称
+    teacher_loc = PageElement(xpath='//div[text()="请选择授课老师"]')  # 授课老师
+    start_time_loc = PageElement(xpath='//input[@class="ant-calendar-input "]')  # 课程开始时间
     save_class_bt = PageElement(xpath='//*[@id="ccp-custom-mask"]/div/div[3]/div[2]')  # 确定
-    lesson_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div[2]/div[1]'
-                                        '/div/div/div/div/div/div/table/tbody/tr/td[1]')  # 课时名称
-    teacher_name_loc = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div[2]/div[1]'
-                                         '/div/div/div/div/div/div/table/tbody/tr/td[2]')  # 老师名字
-    modif_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div[2]/div[1]/div/'
-                                 'div/div/div/div/div/table/tbody/tr/td[6]/div/span[1]')  # 修改
-    remove_bt = PageElement(xpath='//*[@id="root"]/div/div[2]/div[2]/div[3]/div[1]/div[2]/div[1]/div/div/'
-                                  'div/div/div/div/table/tbody/tr/td[6]/div/span[2]')  # 删除
-    remove1_bt = PageElement(xpath='/html/body/div[8]/div/div/div/div[2]/div/div/div/div[2]/div[2]/span')  # 二次确认
-    modif_class_loc = PageElement(xpath='//*[@id="ccp-custom-mask"]/div/div[2]/div/div[1]'
-                                        '/div[2]/div[1]/div/input')  # 修改课程名字
-    save_class1_bt = PageElement(xpath='//*[@id="ccp-custom-mask"]/div/div[3]/div[2]/span')  # 二次确认
+    lesson_name_loc = PageElement(xpath='(//td[@class="ant-table-row-cell-break-word"])[1]')  # 课时名称
+    teacher_name_loc = PageElement(xpath='(//td[@class="ant-table-row-cell-break-word"])[2]')  # 老师名字
+    modif_bt = PageElement(xpath='(//span[text()="修改"])[1]')  # 修改
+    remove_bt = PageElement(xpath='(//span[text()="删除"])[1]')  # 删除
+    remove1_bt = PageElement(xpath='(//span[text()="确定"])[2]')  # 二次确认
+    modif_class_loc = PageElement(xpath='(//input[@class="ant-input"])')  # 修改课程名字
+    save_class1_bt = PageElement(xpath='(//span[text()="确定"])[2]')  # 二次确认
 
     def add_class(self, class_name, teacher_name):
         """增加课时"""

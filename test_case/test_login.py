@@ -30,7 +30,7 @@ class TestLogin():
     def test_login(self,browser):
         """登录"""
         login_page = Loginpage(browser)
-        login_page.admin_login('18888888888', 'test1234')
+        login_page.admin_login('188888xxxxx', 'xxxx12xx')
         assert '教务教学' in login_page.get_title_loc()
 
 
